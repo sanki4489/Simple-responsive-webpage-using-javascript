@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>Responsive web page using javascript</title>
+<script type="text/javascript">
+function check(userid,pwd)
+{
+if(userid.value == "" || pwd.value == "")
+alert("User Id or Password cannot be null");
+else if(userid.value == "sankalp" && pwd.value == "verma")
+{
+alert("Correct password you can Log in");
+}
+else
+{
+alert("Error Password or Username")
+
+}
+}
+function cls()
+{
+document.getElementById("userid").value="";
+document.getElementById("pwd").value="";
+}
+</script>
+
+</head>
+
+<body>
+<table width="20%" bgcolor="0099CC" align="center">
+<tr><td colspan="2"><center><font size="4"><b>Html login
+page</b></font></center></td></tr>
+<tr><td>Username:</td>
+<td><input type="text" id="userid"></td>
+</tr>
+<tr><td>Password"</td><td><input type="password" id="pwd"></td></tr>
+<tr>
+<td><input type="button" value="Clear All" onclick="cls()"></td>
+<td><input type="button" value="login" onclick="check(userid,pwd)"</td>
+
+</tr>
+<tr><td colspan="2">New User...?<a href="signup.html">Register
+here</a></td></tr>
+</table>
+</body>
+
+</html>
+

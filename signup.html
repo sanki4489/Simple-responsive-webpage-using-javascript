@@ -1,0 +1,31 @@
+For New User:
+<html>
+<head>
+<script type="text/javascript">
+function val(username1,pwd1,pwd2)
+{
+if(username1.value=="")
+{
+alert("Username Cannot be blank");
+
+}
+else if(pwd1.value==pwd2.value)
+{
+alert("Registered...");
+}
+else
+{
+alert("Password and Confirm Password are not same");
+}
+}</script>
+</head>
+<body>
+<p>Usernme: <input type="text" id="username1"</p>
+<p>Password: <input type="text" id="pwd1"</p>
+<p>Confirm Password: <input type="text" id="pwd2"></p>
+<p><input type="button" value="Register"
+onclick="val(username1,pwd1,pwd2)"></p>
+
+</body>
+
+</html>
